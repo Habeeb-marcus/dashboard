@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo.png">
+            <span>
+                Mediwave
+            </span>
+        </div>
+
+        <div class="search-section">
+            <h2>Appointments</h2>
+
+            <div>
+                <form>
+                    <label for="search">
+                        <input id="search" type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </label>
+                </form>
+                <button class="notification">
+                    <i class="fas fa-envelope-open-text"></i>
+                </button>
+                <button class="notification">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button>
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fas fa-globe"></i>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="appoint-li">
+                    <i class="far fa-calendar-plus appoint-i" id="appoint-i"></i>
+                    <a href="#" class="appoint-a">Appointments</a>
+                    <button class="appoint-btn">150</button>
+                </li>
+                <li>
+                    <span></span>
+                    <i class="far fa-calendar-alt"></i>
+                    <a href="#">Calender</a>
+                </li>
+                <li class="patient-li">
+                    <i class="fas fa-users"></i>
+                    <a class="pat-a" href="#">Patients</a>
+                    <button class="patient-btn">50</button>
+                </li>
+                <li>
+                    <i class="fas fa-user-md"></i>
+                    <a href="#">Doctors</a>
+                </li>
+                <li>
+                    <i class="fas fa-clinic-medical"></i>
+                    <a href="#">Clinics</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fas fa-cog"></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <i class="far fa-comment-alt"></i>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <article class="stats-section">
+                <div class="top-stats">
+                    <h3>Overview</h3>
+                    <div>
+                        <select class="fa">
+                            <option value="fas fa-user-md">
+                               &#xf0f0; &nbsp; Md Rayhan Islam
+                            </option>
+                            <option value="fas fa-user-md">
+                                &#xf0f0;&nbsp; Md shy boy
+                             </option>
+                             <option value="fas fa-user-md">
+                                &#xf0f0; &nbsp;Habeeb Marcus
+                             </option>
+                        </select>
+                        <select class="fas">
+                            <option value="fas fa-clinic-medical"> &#xf7f2; Central Clinic, Dhaka</option>
+                            <option value="fas fa-clinic-medical">&#xf7f2;Central Clinic, Lagos</option>
+                        </select>
+                        <select class="fa sel-today">
+                            <option value="far fa-calendar-alt">&#xf073; &nbsp;Todays</option>
+                            <option>This week</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- status card -->
+                <div class="status-cards" >  
+                    <!-- APPOInTMNET stats -->
+                    <div class="appointment top-div">
+                        <h4 class="h4-ap">Appointments</h4>
+                        <div class="app-body">
+                            <div class="bars">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                                <div class="bar4"></div>
+                                <div class="bar5"></div>
+                            </div>
+
+
+
+                            <div class="con-span">
+                                <span>150</span>
+                                <span class="today">Todays</span>
+                            </div>
+                            <div class="perct">+11%</div>
+                        </div>
+                    </div>
+
+                    <!-- consultation stats -->
+                    <div class="consultation top-div">
+                        <h4 class="h4-con">Consultations</h4>
+                        <div class="con-body">
+
+
+                            <div class="circle-wrap">
+                                <div class="circle">
+
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+
+                                    <div class="inside-circle">22/30</div>
+
+                                </div>
+                            </div>
+                            <div class="con-span">
+                                <span>22</span>
+                                <span class="today">Todays</span>
+                            </div>
+                            <div class="con-perct">-6.6%</div>
+                        </div>
+                        </div>
+                    
+
+                    <!-- cancelled stats -->
+                    <div class="cancelled top-div">
+                        <h4 class="h4-can">Cancelled</h4>
+                        <div class="can-body">
+                            <div class="bars">
+                                <div class="bar1"></div>
+                                <div class="bar02"></div>
+                                <div class="bar03"></div>
+                                <div class="bar4"></div>
+                                <div class="bar5"></div>
+                            </div>
+                           
+                            <div class="con-span">
+                                <span>03</span>
+                                <span class="today">Todays</span>
+                            </div>
+                            <div class="perct">+09%</div>
+                        </div>
+                    </div>
+
+                    <!-- urgent resolves -->
+                    <div class="urgent-resolves top-div">
+                        <h4 class="h4-ur">Urgent Resolve</h4>
+                        <div class="ur-body">
+                            <div>
+                                <span>bell</span>
+                            </div>
+                            <div class="con-span">
+                                <span>05</span>
+                                <span class="today">Todays</span>
+                            </div>
+                            <div class="perct">+01%</div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </article>
+
+            <article class="profile-section">
+                <div class="prof-top">
+                    <h3><span>Todays </span> <small>150 Appointments</small></h3>
+                    <div class="left">
+                    <div class="list">
+                        <img src="./assets/list_black_24dp.svg" alt="list">
+                    </div>
+                    <div class="app">
+                        <img src="./assets/apps_black_24dp.svg" alt="app">
+                    </div>
+                </div>
+                    
+                </div>
+
+                <div class="profiles">
+
+                    <!-- card1 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img class="bell" src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./image-anne.jpg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Kelvin D. Chukuwma </span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>10:00 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./image-colton.jpg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Shy G. precious</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>10:20 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button2">view details</button>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./image-irene.jpg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Ken C. Yaro</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>10:40 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card4 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./prof1.jpeg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Precious B. Ndubusi</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>11:00 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card5 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./prof2.jpeg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Olamide M. Badoo</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>11:20 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card6 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./prof3.jpeg">
+                        </div>
+                        <div class="card-name"> 
+                            <span class="name">Vector Y. Mayowa</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>11:40 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card7 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img  class="img" src="./prof4.jpeg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Adams G. Giwa</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>12:00 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+
+                    <!-- card8 -->
+                    <div class="profile">
+                        <div class="icons">
+                            <span><img src="./assets/notifications_active_black_24dp.svg" alt=""></span>
+                            <div>
+                                <span><img src="./assets/check_circle_outline_black_24dp.svg" alt=""></span>
+                                <span><img src="./assets/highlight_off_black_24dp.svg"></span>
+                            </div>
+                        </div>
+                        <div class="img-div">
+                            <img class="img" src="./prof5.jpeg">
+                        </div>
+                        <div class="card-name">
+                            <span class="name">Micheal I. iniruo</span>
+                            <span class="profession">Consultation</span>
+                        </div>
+                        <div class="time-section">
+                            <div>12:20 <small>AM</small></div>
+                            <div class="date">03.01.2019</div>
+                        </div>
+                        <button class="card-button">view details</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </main>
+    </div>
+</body>
+<script src="circleDonutChart.js"></script>
+
+
+</html>
