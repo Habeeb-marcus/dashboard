@@ -321,6 +321,14 @@ table {
     .con-perct {
         font-size: 0.7em;
         color: red;
+        margin-right: 44px;
+    }
+    .per {
+        margin-right: 37px;
+    }
+
+    .day {
+        margin-right: 21px;
     }
 
     .today{
@@ -557,3 +565,56 @@ table {
     top: 6px;
     margin-left: 9px;
    }
+
+   .donut-segment {
+       stroke-dasharray: 65 48;
+       stroke-dashoffset: -26;
+   }
+
+   .donut-ring {
+    stroke: #d1f3d1;
+   }
+
+   
+
+   .chart-text {
+    position: absolute;
+    margin-right: 167px;
+    margin-top: 8px;
+    color: gray;
+   }
+
+   .chart-number {
+    position: absolute;
+    font-size: 12px
+}
+
+.chart-mid {
+    font-size: 31px;
+    margin-left: 11px;
+}
+   
+
+   .chart-label {
+    font-size: 12px;
+    margin-top: 15px;
+    position: absolute;
+   }
+
+   .donut {
+    width: 45%;
+    margin-top: 26px;
+   }
+
+   .ur-bell {
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -12px;
+    height: 33px;
+   }
+
+   .ring-con {
+   stroke: #e2deef;
+   }
+
+   
